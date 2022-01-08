@@ -2,9 +2,10 @@
 new Vue({
     el: "#app",
     data: {
-    user:"luna",
-    age:16,
-    allowed:18
+    // user:"luuna",
+    // age:16,
+    // allowed:18
+    cars:['bmw','ford','toyotA']
     },
     methods: {
         changeuser()

@@ -2,15 +2,22 @@
 new Vue({
     el: "#app",
     data: {
-    // user:"luuna",
-    // age:16,
-    // allowed:18
-    cars:['bmw','ford','toyotA']
+         name:"luuna",
+         x:0,
+         y:0
     },
     methods: {
-        changeuser()
-        {
-            return this.user==="luna" ? true:false; 
-        }
-    }
+     update(){
+         setTimeout(()=>{
+             this.name="rafff"
+         },2000)
+     },
+     getCoord(event)
+     {
+         this.x=event.clientX;
+         this.y=event.clientY;
+     }
+
+    },
+    
 });

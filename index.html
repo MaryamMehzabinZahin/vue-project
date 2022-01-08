@@ -9,8 +9,8 @@
 </head>
 <body>
     <div id="app">
-    <p v-for="car in cars">
-        {{car}}
+    <p v-for="(val,index, key) in user">
+        {{index}}: {{key}}: {{val}}
     </p>
 
 </div>

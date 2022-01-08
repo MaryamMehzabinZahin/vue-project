@@ -1,15 +1,15 @@
-var data = { a: 1 }
+
 new Vue({
     el: "#app",
     data: {
-       src:"https://picsum.photos/200/300",
-       alt:"mountain",
-       link:"https://www.google.com/"
+    user:"luna",
+    age:16,
+    allowed:18
     },
-    methods:{
-        greeting()
+    methods: {
+        changeuser()
         {
-            return this.title;
+            return this.user==="luna" ? true:false; 
         }
     }
 });

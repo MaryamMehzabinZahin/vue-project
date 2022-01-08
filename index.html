@@ -9,11 +9,16 @@
 </head>
 <body>
     <div id="app">
-   <div v-on:mousemove="getCoord" class="box">
-       hover
-   </div>
-   <p>X: {{x}}</p>
-   <p>Y: {{y}}</p>
+        <form v-on:submit.prevent="handleForm">
+            <label>First name:</label>
+            <input type="text" v-model="formData.firstname">
+            <hr>
+
+            <label>Last name:</label>
+            <input type="text" v-model="formData.lastname">
+            <hr>
+            <button type="submit">submit</button>
+        </form>
 </div>
     <script src="app.js"></script>
 </body>

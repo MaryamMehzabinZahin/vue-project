@@ -2,22 +2,18 @@
 new Vue({
     el: "#app",
     data: {
-         name:"luuna",
-         x:0,
-         y:0
+        formData:{
+            firstname:'',
+            lastname:''
+        }
     },
     methods: {
-     update(){
-         setTimeout(()=>{
-             this.name="rafff"
-         },2000)
-     },
-     getCoord(event)
+     handleForm()
      {
-         this.x=event.clientX;
-         this.y=event.clientY;
+         console.log(this.formData);
+     }
      }
 
-    },
+
     
 });
